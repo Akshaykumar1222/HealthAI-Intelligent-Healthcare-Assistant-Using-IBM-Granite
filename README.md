@@ -3,23 +3,45 @@
 An AI-powered healthcare chatbot built using **IBM Granite** and **Flask**.  
 Provides context-aware responses to health-related queries and guides users toward professional medical advice.
 
+---
+
 ## Overview
-- Uses IBM Granite Generative AI for intelligent conversations.
-- Simple Flask-based web application for easy deployment.
-- Includes demo video and screenshots for reference.
+- Designed to assist users with preliminary health-related questions.
+- Uses **IBM Granite Generative AI** for natural, intelligent conversations.
+- Built as a lightweight and easily deployable **Flask web application**.
+- Includes a **demo video** and **sample screenshots** for reference.
+
+---
+
+## Features
+- **Generative AI-powered responses** for interactive healthcare assistance.
+- **Context awareness** to provide relevant and user-friendly answers.
+- Simple and clean **Flask-based architecture** for rapid deployment.
+- Can be integrated with other healthcare systems or expanded for future use.
+
+---
+
+## Technologies Used
+- **IBM Granite** (Generative AI model)
+- **Python 3.x**
+- **Flask** for backend development
+- **HTML/CSS** for UI templates
+
+---
 
 ## Project Media
 - [Home Page Screenshot](Screenshots/HomePage.png)
 - [Query Screenshot](Screenshots/query1.png)
-- [Response Screenshot](Screenshots/reponse.png)
+- [Response Screenshot](Screenshots/response.png)
 - [Watch Demo Video](video_demo/healthai%20Demovideo.mp4)
 
-## Usage
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the app: `python app.py`
-3. Open `http://127.0.0.1:5000` in your browser.
+---
 
-> **Note:** This is a demonstration project and not a substitute for professional medical advice.
+## Usage
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
 
 
 
