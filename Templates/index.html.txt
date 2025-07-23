@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthAI Chatbot</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+    <h1>HealthAI - Intelligent Healthcare Assistant</h1>
+    <input id="userInput" type="text" placeholder="Ask me anything about your health..." style="width: 60%; padding: 10px;">
+    <button onclick="sendMessage()">Send</button>
+    <p id="response" style="margin-top: 20px; color: green;"></p>
+    <script>
+        function sendMessage() {
+            fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: document.getElementById('userInput').value })
+            })
+            .then(response => response.json())
+            .then(data => document.getElementById('response').innerText = data.reply);
+        }
+    </script>
+</body>
+</html>

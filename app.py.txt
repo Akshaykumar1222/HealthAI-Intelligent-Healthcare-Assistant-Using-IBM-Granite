@@ -1,0 +1,18 @@
+from flask import Flask, render_template, request, jsonify
+from project_files.helper import preprocess_input, dummy_response
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    user_input = preprocess_input(request.json.get("message", ""))
+    response = f"HealthAI Response: {user_input}. {dummy_response()}"
+    return jsonify({"reply": response})
+
+if __name__ == "__main__":
+    app.run(debug=True)
+

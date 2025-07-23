@@ -1,0 +1,6 @@
+# Helper functions for HealthAI project
+def preprocess_input(user_input):
+    return user_input.lower().strip()
+
+def dummy_response():
+    return "This is a placeholder helper function."
